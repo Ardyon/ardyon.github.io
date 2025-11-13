@@ -6,40 +6,365 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <title>Home</title>
+  <title>Aiden Raaphorst</title>
 </head>
 
 <body>
   <header>
     <h1 class="title">Aiden Raaphorst</h1>
 
-    <svg id="link-burger-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
-      <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
-      <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
-    </svg>
+    <img id="link-burger-icon" src="assets/icons/burger-menu.svg" alt="Burger menu icon">
 
     <nav>
       <ul class="links">
         <li><a href="#about">Over mij</a></li>
         <li><a href="#projects">Projecten</a></li>
-        <li><a target="_blank" href="https://github.com/AidenRaaphorst">Github</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li>
+          <a target="_blank" href="https://github.com/Ardyon">
+            <img class="logo" src="assets/logos/github-mark-white.svg" alt="GitHub logo">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/aiden-raaphorst-70b15a226/">
+            <img class="logo" src="assets/logos/linkedin-logo.svg" alt="LinkedIn logo">
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
+
+    <!-- Over mij -->
     <article>
-      <h2>Under construction</h2>
+      <h2 id="about">Over mij</h2>
+
+      <section id="intro">
+        <p>
+          Ik ben een software developer met een veel interesse in
+          <strong>
+            creatieve projecten, de veiligheid van code en de omgang met gevoelige (gebruikers) informatie.
+          </strong>
+          <br>
+          <br>
+          Ik heb een <strong>sterke</strong> achtergrond in programmeren (in mijn vrije tijd, op school, en op stages)
+          en heb gewerkt aan meerdere projecten.
+          <br>
+          <br>
+          Ik ben een snelle leerling en ben altijd op zoek naar manieren om mijn vaardigheden te verbeteren. Ook help ik
+          graag mensen met het oplossen van problemen en het leren van nieuwe vaardigheden.
+          <br>
+          <br>
+          Vooral een focus op <strong>back-end/software development</strong>, maar kan ook prima front-end werken.
+        </p>
+        <img src="assets/aiden-headshot.jpg" alt="Aiden Raaphorst">
+      </section>
+
+      <section>
+        <h3>School</h3>
+        <p>
+          Ik heb de <a target="_blank"
+            href="https://www.roc-nijmegen.nl/mbo-opleidingen/ict-media/ict/software-developer-bologna-model">
+            4-jarige MBO-opleiding Software Developer</a>
+          gedaan aan <a target="_blank" href="https://www.roc-nijmegen.nl/locaties/heyendaalseweg">ROC Nijmegen</a>
+          en heb zonder moeite mijn diploma gehaald.
+          Ondanks dat dit een MBO-opleiding is, heb ik <strong>HBO werk- en denkniveau</strong>.
+          <br><br>
+          Op school heb ik vooral gewerkt met front-end technologieën, zoals:
+          <strong>HTML</strong>,
+          <strong>CSS</strong>,
+          <strong>JavaScript</strong>,
+          <a target="_blank" href="https://react.dev/">React</a>,
+          <a target="_blank" href="https://laravel.com/">Laravel</a>.
+          <br>
+          Ook was er een kleine focus op back-end technologieën, zoals: <strong>PHP</strong>,
+          <strong>SQL</strong>, <strong>NoSQL</strong>. Ook heb ik gebruik gemaakt van
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>,
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Model-view-controller">MVC</a> en
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Software_design_pattern">Design Patterns</a>.
+        </p>
+      </section>
+
+      <section>
+        <h3>Hobby's</h3>
+        <p>
+          In mijn vrije tijd programmeer ik natuurlijk, maar ik hou me ook bezig met andere hobby's, zoals:
+        </p>
+        <br>
+        <ul>
+          <li>
+            Gamen (<a target="_blank" href="https://www.minecraft.net/">Minecraft</a>,
+            <a target="_blank" href="https://satisfactorygame.com/">Satisfactory</a>,
+            <a target="_blank" href="https://www.counter-strike.net">CS2</a>, en meer)
+          </li>
+          <li>
+            Elektrische gitaar spelen
+          </li>
+          <li>
+            Muziek luisteren (vooral metal)
+          </li>
+          <li>
+            Homelab (server, Raspberry Pi's)
+          </li>
+        </ul>
+
+        <br>
+        <p>
+          In mijn homelab draai ik allerlei services, zoals:
+          <a target="_blank" href="https://proxmox.com/en/">Proxmox</a>,
+          <a target="_blank" href="https://jellyfin.org/">Jellyfin</a>,
+          <a target="_blank" href="https://nextcloud.com/">Nextcloud</a>,
+          <a target="_blank" href="https://pi-hole.net/">Pi-hole</a>,
+          <a target="_blank" href="https://nginxproxymanager.com/">Nginx Proxy Manager</a>,
+          <a target="_blank" href="https://www.wireguard.com/">WireGuard</a>, game servers en nog veel meer.
+        </p>
+      </section>
+
+      <section>
+        <h3>Stage</h3>
+        <h4><a target="_blank" href="https://www.platecms.com/">Plate CMS</a></h4>
+        <p>
+          Tijdens mijn 1e stage werkte ik aan de <strong>back-end</strong> van het bedrijf.
+          <br>
+          Mij werd uitgelegd hoe hun hele back-end werkte. Ik heb gebruik gemaakt van
+          <a target="_blank" href="https://expressjs.com/">ExpressJS</a>,
+          <a target="_blank" href="https://nestjs.com/">NestJS</a>,
+          <a target="_blank" href="https://www.docker.com/">Docker</a>,
+          <a target="_blank" href="https://graphql.org/">GraphQL</a>,
+          graph databases met <a target="_blank" href="https://neo4j.com/">Neo4j</a>,
+          en een klein beetje
+          <a target="_blank" href="https://www.rabbitmq.com/">RabbitMQ</a> en
+          <a target="_blank" href="https://kubernetes.io/">Kubernetes</a>.
+        </p>
+
+        <h4><a href="https://gimtransfer.com/" target="_blank">GIMtransfer</a></h4>
+        <p>
+          Op mijn 2e stage werkte ik <strong>vooral aan de front-end</strong>, maar ook een
+          <strong>beetje back-end</strong>.
+          Ik zat daar met 2 klasgenoten.
+          <br>
+          We hebben documentatie (<strong>code comments</strong>, <strong>UML diagrammen</strong>,
+          <strong>plannen</strong>) moeten maken voor het bedrijf, want dat hadden
+          ze zelf niet.
+          Verder hebben vooral gewerkt met <a target="_blank" href="https://react.dev/">ReactJS</a>, maar hebben ook
+          gebruik gemaakt van
+          <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">Redux</a>,
+          <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">three.js</a> en
+          <a href="https://docs.pmnd.rs/react-three-fiber" target="_blank" rel="noopener noreferrer">
+            React Three Fiber
+          </a>.
+          <br>
+          Zelf heb ik ook nog een beetje gewerkt met de back-end, namelijk
+          <a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" rel="noopener noreferrer">ASP.NET
+            Core</a>.
+          <br>
+        </p>
+
+        <h4><a target="_blank" href="https://www.metal-morph.com/">Metal Morphosis</a> (afstudeerstage)</h4>
+        <p>
+          Op mijn afstudeerstage werkte ik als <strong>software/embedded developer</strong>.
+          <br>
+          Mijn taak was om hun idee voor een nieuw product voor hun machines werkelijkheid te maken.
+          <br>
+          Ik heb gebruik gemaakt van een <a target="_blank" href="https://www.raspberrypi.com/">Raspberry Pi</a>, een
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Analog-to-digital_converter">12-bits ADC</a>, knoppen
+          en potentiometers om de data te verzamelen en te verwerken.
+          <br>
+          Ook heb ik buiten programmeren, voor het eerst een <strong>PCB ontworpen</strong>
+          (met <a target="_blank" href="https://easyeda.com/">EasyEDA</a>) en <strong>gesoldeerd</strong>.
+        </p>
+      </section>
+    </article>
+
+    <!-- Projecten -->
+    <article>
+      <h2 id="projects">Projecten</h2>
+
+      <section>
+        <h3>
+          <a target="_blank" href="https://github.com/Ardyon/mc-mod-updater">MC Mod Updater</a>
+          (gearchiveerd)
+        </h3>
+        <p>
+          Een app waarmee je mods voor Minecraft in één keer kunt updaten.
+          <br><br>
+          Ik heb dit project gemaakt omdat ik zelf vaak mods voor Minecraft moest updaten,
+          maar dat moest ik één voor één doen. <br>
+          Ik dacht dat het leuk zou zijn om een app te maken die dit voor mij kan doen.
+          <br><br>
+          De app haalt de mods vanuit de
+          <a target="_blank" href="https://modrinth.com/">Modrinth</a> en
+          <a target="_blank" href="https://www.curseforge.com/">CurseForge</a> API's op.
+        </p>
+
+        <div class="image-container">
+          <img src="assets/projects/mc-mod-updater/general-tab.png" alt="General tab of MC Mod Updater">
+          <img src="assets/projects/mc-mod-updater/settings-tab.png" alt="Settings tab of MC Mod Updater">
+        </div>
+
+        <p>
+          <strong>Techstack:</strong>
+        </p>
+        <ul>
+          <li>
+            Python >=3.10
+          </li>
+          <li>
+            <a target="_blank" href="https://doc.qt.io/qtforpython-6/gettingstarted.html">PySide6</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://docs.modrinth.com/api/">Modrinth API</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://docs.curseforge.com/rest-api/#getting-started">CurseForge API</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>
+          <a target="_blank" href="https://github.com/Ardyon/youtube-declutter">YouTube Declutter</a>
+        </h3>
+        <p>
+          Een <a href="https://en.wikipedia.org/wiki/Userscript">UserScript</a> die YouTube's minst gebruikte knoppen
+          ('Join', 'Thank', 'Clip') onder de video verbergt.
+          <br><br>
+          Door deze knoppen te verbergen, alles een stuk overzichtelijker en leesbaarder.
+        </p>
+        <div class="image-container">
+          <img
+            src="https://raw.githubusercontent.com/Ardyon/youtube-declutter/refs/heads/main/img/screen_normal_off.png"
+            alt="YouTube Declutter before">
+
+          <img src="https://raw.githubusercontent.com/Ardyon/youtube-declutter/refs/heads/main/img/screen_normal_on.png"
+            alt="YouTube Declutter after">
+
+          <img
+            src="https://raw.githubusercontent.com/Ardyon/youtube-declutter/refs/heads/main/img/screen_smaller_off.png"
+            alt="YouTube Declutter before large">
+
+          <img
+            src="https://raw.githubusercontent.com/Ardyon/youtube-declutter/refs/heads/main/img/screen_smaller_on.png"
+            alt="YouTube Declutter after large">
+        </div>
+
+        <p>
+          <strong>Techstack:</strong>
+        </p>
+        <ul>
+          <li>
+            JavaScript
+          </li>
+          <li>
+            <a target="_blank" href="https://violentmonkey.github.io/">Violentmonkey</a> /
+            <a target="_blank" href="https://www.tampermonkey.net/">Tampermonkey</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>MC Server Shutdown Timer (Privé)</h3>
+        <p>
+          Een server-side mod voor Minecraft die de server automatisch uit zet wanneer er geen spelers meer online zijn.
+          <br><br>
+          Toen ik met een paar vrienden een Minecraft server had, hostte ik mijn eigen server thuis. <br>
+          In de Corona tijden was de elektriciteit erg duur, dus was het niet handig om de server 24/7 aan te laten
+          staan. <br>
+          Daarom heb ik een server-side mod gemaakt die de server automatisch uit zet. <br>
+          De timer startte op het moment dat er geen spelers meer online waren en stopte wanneer er iemand online kwam
+          voordat de timer af ging.
+        </p>
+
+        <br>
+        <p>
+          <strong>Techstack:</strong>
+        </p>
+        <ul>
+          <li>
+            Java
+          </li>
+          <li>
+            <a target="_blank" href="https://gradle.org/">Gradle</a> (Java Build tool)
+          </li>
+          <li>
+            <a target="_blank" href="https://fabricmc.net/">Fabric MC</a> (voor de server-side mod)
+          </li>
+          <li>
+            <a target="_blank" href="https://www.docker.com/">Docker</a> (MC server in container)
+          </li>
+          <li>
+            <a target="_blank"
+              href="https://stackoverflow.com/questions/32163955/how-to-run-shell-script-on-host-from-docker-container/63719458#63719458">
+              Named pipes
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>MC WebPanel (Privé)</h3>
+        <p>
+          Webpanel voor een Minecraft server waar je makkelijk de server kan beheren.
+          <br>
+          <br>
+          Als ik mijn eigen minecraft server draai via Docker, kan ik moeilijk bij de console. <br>
+          Dus ik heb een mod gemaakt die een website host met een console, zodat je direct met de server kan praten via
+          de website. <br>
+          Natuurlijk is de website goed beveiligd.
+        </p>
+
+        <div class="image-container">
+          <img src="assets/projects/mc-webpanel/console.png" alt="MC WebPanel console">
+          <img src="assets/projects/mc-webpanel/settings.png" alt="MC WebPanel settings">
+        </div>
+
+        <p>
+          <strong>Techstack:</strong>
+        </p>
+        <ul>
+          <li>
+            Java
+          </li>
+          <li>
+            <a target="_blank" href="https://gradle.org/">Gradle</a> (Java Build tool)
+          </li>
+          <li>
+            <a target="_blank" href="https://javalin.io/">Javalin</a> (Web framework)
+          </li>
+          <li>
+            <a target="_blank" href="https://fabricmc.net/">Fabric MC</a> (voor de server-side mod)
+          </li>
+          <li>
+            <a target="_blank" href="https://getbootstrap.com/">Bootstrap CSS</a>
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- Contact -->
+    <article>
+      <h2 id="contact">Contact</h2>
 
       <section>
         <p>
-          This website is under construction. Come back later.
+          <strong>Email:</strong>
+          <a target="_blank" href="mailto:aidenraaphorst@gmail.com">aidenraaphorst@gmail.com</a>
+        </p>
+        <p>
+          <strong>GitHub:</strong>
+          <a target="_blank" href="https://github.com/Ardyon">@Ardyon</a> &
+          <a target="_blank" href="https://github.com/ItsArdyon">@ItsArdyon</a> (alt account)
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a target="_blank" href="https://www.linkedin.com/in/aiden-raaphorst-70b15a226/">Aiden Raaphorst</a>
         </p>
       </section>
     </article>
   </main>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

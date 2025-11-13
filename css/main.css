@@ -1,7 +1,7 @@
 :root {
   --text: #dddddd;
   --header-text: #ffffff;
-  --link-text: #49ee57;
+  --link-text: #6ae8f1;
   --background: #1a1a1a;
   --code-background: #313131;
   --header-background: rgba(255, 255, 255, 0.067);
@@ -14,10 +14,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Rubik', monospace;
+  color: var(--text);
 }
 
 body {
-  color: var(--header-text);
   background-color: var(--background);
 }
 
@@ -32,8 +32,21 @@ header {
   height: 4rem;
   padding: 2rem;
   box-shadow: var(--shadow) 0px 3px 8px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   background-color: var(--header-background);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: auto;
+  height: 2rem;
 }
 
 nav {
@@ -49,6 +62,17 @@ nav ul {
   justify-content: end;
   gap: 2rem;
   list-style-type: none;
+}
+
+nav li {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+header a:focus {
+  background: none;
 }
 
 #link-burger-icon {
@@ -81,14 +105,66 @@ article h2 {
   width: 100%;
   margin-bottom: 2rem;
   text-align: center;
+  color: var(--header-text);
+  scroll-margin-top: 8rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+}
+
+section#intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
+section#intro img {
+  width: 15rem;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 section h3 {
   margin-top: 2rem;
+  color: var(--header-text);
 }
 
 section p+h4 {
   margin-top: 1rem;
+}
+
+section ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 50dvh;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  overflow-y: auto;
+  background-color: var(--code-background);
+  border-radius: 1rem;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 1rem;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0.5rem;
+  scroll-snap-align: start;
+  cursor: pointer;
 }
 
 p {
@@ -100,25 +176,51 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  display: inline-block;
-  text-decoration: none;
   color: var(--link-text);
+  text-decoration: none;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    linear-gradient(to right, var(--link-text), var(--link-text));
+  background-size:
+    100% 0.1rem,
+    0 0.1rem;
+  background-position:
+    100% 100%,
+    0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 300ms;
 }
 
-a::after {
-  width: 0px;
-  height: 2px;
-  display: block;
-  content: '';
-  background: var(--link-text);
-  transition: 300ms;
+a:focus,
+a:hover {
+  background-size:
+    0 0.1rem,
+    100% 0.1rem;
 }
 
-a:hover::after {
-  width: 100%;
+@media only screen and (max-width: 1000px) {
+  section#intro {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  section#intro img {
+    width: 80%;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  article {
+    width: 70%;
+  }
+
+  section#intro img {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
   body {
     font-size: 0.8rem;
   }
@@ -126,10 +228,6 @@ a:hover::after {
   article {
     width: 95%;
     padding: 1rem;
-  }
-
-  header {
-    backdrop-filter: blur(6px);
   }
 
   #link-burger-icon {
@@ -162,7 +260,7 @@ a:hover::after {
     height: 100%;
   }
 
-  a::after {
-    height: 0;
+  .image-container img {
+    border-radius: 0.2rem;
   }
 }
